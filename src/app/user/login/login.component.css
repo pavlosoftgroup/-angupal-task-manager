@@ -1,0 +1,22 @@
+.center-block.login{
+    width: 50%;
+}
+.example-full-width {
+    width: 100%;
+    padding:5px;
+}
+.panel-heading{
+    padding: 5px 45px 5px 5px;
+    background: #00BCD4;
+    color: #fff;
+    font-size: 120%;
+    font-weight: bold;
+}
+.center-block{
+    margin: 15px auto;
+}
+.panel{
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    padding: 0 0 6px;
+
+}

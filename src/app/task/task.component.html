@@ -1,0 +1,29 @@
+
+
+  <md-list>
+    <h3 md-subheader>Task</h3>
+    <span class="right" mdTooltip="right">
+      <a md-fab routerLink="/task/add"><md-icon>
+        add_circle_outline
+      </md-icon>
+</a>
+    </span>
+    <md-list-item *ngFor="let task of taskes" (click)="taskDetal(task.id)">
+      <md-icon md-list-icon>
+        <i class="material-icons  md-48">work</i></md-icon>
+      <h4 md-line>{{task.title}}</h4>
+      <p md-line> {{task.description}} </p>
+    </md-list-item>
+    <md-divider></md-divider>
+
+  </md-list>
+  <!--<din **ngFor="let resp of responce">-->
+
+
+  <!--<button> resp.title</button>-->
+  <!--</din>-->
+
+
+
+
+

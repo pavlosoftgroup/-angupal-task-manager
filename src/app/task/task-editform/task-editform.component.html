@@ -1,0 +1,30 @@
+<div class="panel panel-primary center-block login">
+
+  <div *ngIf='value' class="panel-heading panel-inverse">Edit {{task.title}}</div>
+  <div class="panel-body">
+    <md-input-container *ngIf="!value" class="example-full-width">
+      <input mdInput placeholder="Title" [(value)]="task.title">
+    </md-input-container>
+
+    <!--<form class="example-form" (ngSubmit)="register()">-->
+    <md-input-container class="example-full-width">
+      <input mdInput placeholder="Description" [(value)]="task.description">
+    </md-input-container>
+
+    <md-input-container class="example-full-width">
+      <input mdInput placeholder="Start Date" [(value)]="task.timeStart">
+    </md-input-container>
+    <md-input-container class="example-full-width">
+      <input mdInput placeholder="Finish Date" [(value)]="task.timeFinish" >
+    </md-input-container>
+
+    <md-input-container class="example-full-width">
+      <input mdInput placeholder="Developer" [(value)]="task.developer">
+    </md-input-container>
+    <md-input-container class="example-full-width">
+      <input mdInput placeholder="Status" [(value)]="task.status">
+    </md-input-container>
+    <button  md-raised-button>{{buttonValue}}</button>
+
+  </div>
+</div>

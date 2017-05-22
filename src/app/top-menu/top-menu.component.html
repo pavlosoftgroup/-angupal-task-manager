@@ -1,0 +1,23 @@
+<md-menu #menu="mdMenu">
+  <a *ngFor="let page of pages" md-raised-button [routerLink]="page.link">{{page.name}}</a>
+
+</md-menu>
+<span id="top-menu">
+
+
+<span class="container">
+
+  <a *ngFor="let page of pages" md-raised-button routerLinkActive="active"
+     routerLink="{{page.link}}">{{page.name}}
+  </a>
+</span>
+<span class="container right-container">
+  <a md-icon-button routerLinkActive="active" routerLink="/register">
+<i class="material-icons md-48">person_add</i>
+  </a>
+<a md-icon-button routerLinkActive="active" routerLink="/login">
+  <i class="material-icons md-48">lock_open</i>
+</a>
+</span>
+</span>
+
